@@ -60,7 +60,7 @@ runs:
         TF_VAR_target_repository: registry.local:5000/testing
         TF_VAR_target_tag: ${{ inputs.apkoTargetTag }}
         TF_VAR_tag_suffix: ${{ inputs.apkoTargetTagSuffix }}
-        APKO_IMAGE: ghcr.io/wolfi-dev/apko:latest@sha256:36e1fdffb0d54aa92bd614eb68f0fe1e4a8e42f939e00e1ea58e2cc2ac1da99d
+        APKO_IMAGE: ghcr.io/wolfi-dev/apko:latest@sha256:88a985d2c24053f128c7db1a2d1dc2b4e07e5eec6735387c7ea94051652b4647
       run: |
         set -x -o pipefail
         env | grep '^TF_VAR_'
